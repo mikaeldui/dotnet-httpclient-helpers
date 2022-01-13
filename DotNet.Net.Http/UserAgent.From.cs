@@ -33,6 +33,15 @@ namespace System.Net.Http
             if(frameworkVersion != null)
                 userAgent.Comments.Add(frameworkVersion.Replace(",Version=", " "));
 
+            var metaAttributes = assembly.GetCustomAttributes<AssemblyMetadataAttribute>();
+            if (metaAttributes != null)
+            {
+                var repoUrl = metaAttributes.FirstOrDefault(a => a.Key == "RepositoryUrl")?.Value;
+
+                if (repoUrl != null)
+                    userAgent.Comments.Add("+" + repoUrl);
+            }
+
             return userAgent;
         }
     }
