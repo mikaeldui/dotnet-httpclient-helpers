@@ -29,10 +29,9 @@ namespace System.Net.Http
 
             userAgent.Comments.Add(assemblyName.ProcessorArchitecture.ToString());
 
-            var targetFramework = assembly.GetCustomAttribute<TargetFrameworkAttribute>();
-            var frameworkVersion = targetFramework?.FrameworkName.Replace(",Version=", " ");
+            var frameworkVersion = assembly.GetCustomAttribute<TargetFrameworkAttribute>()?.FrameworkName;
             if(frameworkVersion != null)
-                userAgent.Comments.Add(frameworkVersion);
+                userAgent.Comments.Add(frameworkVersion.Replace(",Version=", " "));
 
             return userAgent;
         }
