@@ -6,10 +6,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <RootNamespace>System.Net.Http</RootNamespace>
-    <PackageId>MikaelDui.DotNet.HttpClient.Helpers</PackageId>
+    <PackageId>MikaelDui.Net.Http.Helpers</PackageId>
     <Authors>Mikael Dúi Bolinder</Authors>
-    <Product>MikaelDui.DotNet.HttpClient.Helpers</Product>
-    <Description>This</Description>
+    <Product>Mikael Dúi's .NET HTTP Helpers</Product>
+    <Description>Adds helpers classes to the System.Net.Http namespace.</Description>
     <PackageProjectUrl>https://github.com/mikaeldui/dotnet-httpclient-helpers</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIcon>DotNet.HttpClient.Helpers.png</PackageIcon>
