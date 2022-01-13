@@ -9,3 +9,4 @@ You can install it using the following **.NET CLI** command:
 
     dotnet add package MikaelDui.Net.Http --version *
 
+![image](https://user-images.githubusercontent.com/3706841/149279024-13771915-01ea-4bdc-9952-96e48841e75e.png)
