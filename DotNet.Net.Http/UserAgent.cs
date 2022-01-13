@@ -25,7 +25,7 @@ namespace System.Net.Http
                 userAgent += "/" + Version;
 
             if (this is { Comments: not null, Comments: { Count: not 0 } } && Comments.Any(c => !string.IsNullOrWhiteSpace(c)))
-                userAgent += $" ({Comments.Where(c => !string.IsNullOrWhiteSpace(c)).Join("; ")})"; 
+                userAgent += $" ({Comments.Where(c => !string.IsNullOrWhiteSpace(c)).Distinct().Join("; ")})"; 
 
             if (DependentProduct != null)
                 userAgent += " " + DependentProduct.ToString();
