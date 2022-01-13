@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netstandard2.1;net5.0;net6.0</TargetFrameworks>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>System.Net.Http</RootNamespace>
+    <PackageId>MikaelDui.DotNet.HttpClient.Helpers</PackageId>
+    <Authors>Mikael Dúi Bolinder</Authors>
+    <Product>MikaelDui.DotNet.HttpClient.Helpers</Product>
+    <Description>This</Description>
+    <PackageProjectUrl>https://github.com/mikaeldui/dotnet-httpclient-helpers</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>DotNet.HttpClient.Helpers.png</PackageIcon>
+    <RepositoryUrl>https://github.com/mikaeldui/dotnet-httpclient-helpers</RepositoryUrl>
+    <PackageTags></PackageTags>
+    <PackageLicenseExpression>Unlicense</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\DotNet.HttpClient.Helpers.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MikaelDui.Extensions" Version="*" />
+  </ItemGroup>
+
+</Project>
