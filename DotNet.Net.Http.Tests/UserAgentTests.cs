@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -38,6 +39,32 @@ namespace System.Net.Http.Tests
                 client.DefaultRequestHeaders.Add(agent);
 
                 Assert.AreEqual(client.DefaultRequestHeaders.UserAgent.ToString(), agent.ToString());
+            }
+        }
+
+        [TestMethod]
+        public void FromEntryAssembly()
+        {
+            var entryAssembly = Assembly.GetEntryAssembly();
+            if (entryAssembly == null)
+                Assert.Inconclusive();
+            else
+            {
+                var agent = UserAgent.From(entryAssembly);
+                Assert.IsNotNull(agent);
+            }
+        }
+
+        [TestMethod]
+        public void FromThisAssembly()
+        {
+            var executingAssembly = Assembly.GetExecutingAssembly();
+            if (executingAssembly == null)
+                Assert.Inconclusive();
+            else
+            {
+                var agent = UserAgent.From(executingAssembly);
+                Assert.IsNotNull(agent);
             }
         }
 

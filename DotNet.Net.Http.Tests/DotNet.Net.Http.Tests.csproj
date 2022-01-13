@@ -6,7 +6,7 @@
     <IsPackable>false</IsPackable>
     <RootNamespace>System.Net.Http.Tests</RootNamespace>
     <Authors>Mikael Dúi Bolinder</Authors>
-    <Product>MikaelDui.DotNet.HttpClient.Helpers</Product>
+    <Product>Tests for Mikael Dúi's System.Net.Http extra classes</Product>
   </PropertyGroup>
 
   <ItemGroup>
@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DotNet.HttpClient.Helpers\DotNet.HttpClient.Helpers.csproj" />
+    <ProjectReference Include="..\DotNet.Net.Http\DotNet.Net.Http.csproj" />
   </ItemGroup>
 
 </Project>

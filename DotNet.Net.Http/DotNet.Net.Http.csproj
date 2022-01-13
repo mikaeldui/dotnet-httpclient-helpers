@@ -6,20 +6,20 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <RootNamespace>System.Net.Http</RootNamespace>
-    <PackageId>MikaelDui.Net.Http.Helpers</PackageId>
+    <PackageId>MikaelDui.Net.Http</PackageId>
     <Authors>Mikael Dúi Bolinder</Authors>
-    <Product>Mikael Dúi's .NET HTTP Helpers</Product>
-    <Description>Adds helpers classes to the System.Net.Http namespace.</Description>
-    <PackageProjectUrl>https://github.com/mikaeldui/dotnet-httpclient-helpers</PackageProjectUrl>
+    <Product>Mikael Dúi's System.Net.Http Extra Classes</Product>
+    <Description>Adds extra classes to the System.Net.Http namespace.</Description>
+    <PackageProjectUrl>https://github.com/mikaeldui/dotnet-net-http</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageIcon>DotNet.HttpClient.Helpers.png</PackageIcon>
-    <RepositoryUrl>https://github.com/mikaeldui/dotnet-httpclient-helpers</RepositoryUrl>
+    <PackageIcon>DotNet.Net.Http.png</PackageIcon>
+    <RepositoryUrl>https://github.com/mikaeldui/dotnet-net-http</RepositoryUrl>
     <PackageTags></PackageTags>
     <PackageLicenseExpression>Unlicense</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\DotNet.HttpClient.Helpers.png">
+    <None Include="..\DotNet.Net.Http.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>

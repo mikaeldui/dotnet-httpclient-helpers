@@ -2,7 +2,7 @@ using System.Net.Http.Headers;
 
 namespace System.Net.Http
 {
-    public class UserAgent
+    public partial class UserAgent
     {
         public UserAgent(string name, string? version = null, IEnumerable<string>? comments = null, UserAgent? dependentProduct = null)
         {
@@ -14,7 +14,7 @@ namespace System.Net.Http
 
         public string Name { get; set; }
         public string? Version { get; set; }
-        public List<string>? Comments { get; set; }
+        public List<string> Comments { get; }
         public UserAgent? DependentProduct { get; set; }
 
         public override string ToString()
@@ -32,16 +32,5 @@ namespace System.Net.Http
 
             return userAgent;
         }
-    }
-
-    public static class HttpClientUserAgentExtensions
-    {
-        public static void Add(this HttpRequestHeaders headers, UserAgent userAgent)
-        {
-            if (userAgent == null)
-                throw new ArgumentNullException(nameof(userAgent));
-
-            headers.Add("User-Agent", userAgent.ToString());
-        } 
     }
 }
